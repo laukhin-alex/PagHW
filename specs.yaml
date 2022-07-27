@@ -1,0 +1,118 @@
+---
+openapi: 3.0.0
+info:
+  title: API of Ice And Fire
+  description: API of Ice And Fire
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://www.anapioficeandfire.com/api
+  description: Main server
+tags:
+- name: characters
+  description: All About Characters
+paths:
+  /characters:
+    get:
+      tags:
+      - characters
+      summary: get all characters
+      description: Get All Characters
+      operationId: getAllCharacters
+      parameters:
+      - name: page
+        in: query
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: good
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Character'
+        "400":
+          description: bad input parameter
+components:
+  schemas:
+    Character:
+     type: array
+     items: 
+       $ref: '#/components/schemas/Description'
+    Titles:
+     type: array
+     items:
+      type: string
+    Aliases:
+     type: array
+     items:
+      type: string
+    Allegiances:
+     type: array
+     items:
+      type: string
+    Books:
+     type: array
+     items:
+      type: string 
+    PovBooks:
+     type: array
+     items:
+      type: string   
+    TvSeries:
+     type: array
+     items:
+      type: string   
+    PlayedBy:
+     type: array
+     items:
+      type: string     
+    Description:
+        required:
+        - name
+        - gender
+        - culture
+        - born
+        - died
+        type: object
+        properties:
+          url: 
+           type: string     
+          name:
+            type: string
+          gender:
+            type: string
+          culture:
+            type: string
+          born:
+            type: string
+          died:
+           type: string
+          titles:
+           $ref: '#/components/schemas/Titles'
+          aliases:
+           $ref: '#/components/schemas/Aliases'      
+          father:
+           type: string
+          mother:
+           type: string
+          spouse:
+           type: string
+          allegiances:
+           $ref: '#/components/schemas/Allegiances'   
+          books:
+           $ref: '#/components/schemas/Books' 
+          povBooks:
+           $ref: '#/components/schemas/PovBooks'           
+          tvSeries:
+           $ref: '#/components/schemas/TvSeries'  
+          playedBy:
+           $ref: '#/components/schemas/PlayedBy'  
+
+
+
