@@ -77,7 +77,9 @@ struct CharacterCellView: View {
                     .background(Color.black)
             }
         }
-
+        .background(Color.gray)
     }
+
+
 }
 

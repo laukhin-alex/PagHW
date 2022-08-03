@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = ContentViewModelForTest()
+    
     var body: some View {
+
         CharactersListView()
+            .padding().onAppear {
+            self.model.doPagging()
+        }
     }
 }
 

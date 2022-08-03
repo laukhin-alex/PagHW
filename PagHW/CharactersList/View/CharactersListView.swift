@@ -12,7 +12,10 @@ import NetworkLayer
 struct CharactersListView: View {
     @ObservedObject private var viewModel = CharactersViewModel()
 
+    
     var body: some View {
+        
+        
         List {
             ForEach(viewModel.characters) { character in
                 CharacterCellView(name: character.name,
@@ -31,11 +34,11 @@ struct CharactersListView: View {
                                   povBooks: character.povBooks ?? ["No information"],
                                   tvSeries: character.tvSeries ?? ["No information"],
                                   playedBy: character.playedBy ?? ["No information"])
-                    .onAppear {
-                        if viewModel.canLoad && viewModel.characters.isLast(character) {
-                            viewModel.fetchCharacters()
-                        }
+                .onAppear {
+                    if viewModel.canLoad && viewModel.characters.isLast(character) {
+                        viewModel.fetchCharacters()
                     }
+                }
             }
         }
         .onAppear {

@@ -12,7 +12,7 @@ class Configurator {
     static let shared = Configurator()
 
     func register() {
-        ServiceLocator.shared.addServices(service: CharactersAPI())
+        ServiceLocator.shared.addServices(service: TestingService())
         ServiceLocator.shared.addServices(service: CharactersViewModel())
         print("🅰️Servies registration💻")
 

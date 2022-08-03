@@ -10,10 +10,12 @@ import Foundation
 import AnyCodable
 #endif
 
-open class CharactersAPI {
+public class CharactersAPI {
 
     public init() {}
-
+    public func printService() {
+        print("🥺🥺🥺🥺🥺🥺🥺🥺")
+    }
     /**
      get all characters
      
@@ -60,6 +62,6 @@ open class CharactersAPI {
         print("🥺getAllCharactersWithRequestBuilder service is done!🤩")
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters)
-
+    
     }
 }

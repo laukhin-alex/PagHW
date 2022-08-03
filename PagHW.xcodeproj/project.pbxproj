@@ -10,6 +10,8 @@
 		1F14E28A289A5446005BAAC9 /* SeriviceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E289289A5446005BAAC9 /* SeriviceLocator.swift */; };
 		1F14E28C289A5466005BAAC9 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E28B289A5466005BAAC9 /* Configurator.swift */; };
 		1F14E28E289A54B7005BAAC9 /* InjectedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E28D289A54B7005BAAC9 /* InjectedWrapper.swift */; };
+		1F14E292289A8BBF005BAAC9 /* TestingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E291289A8BBF005BAAC9 /* TestingService.swift */; };
+		1F14E294289A8CD4005BAAC9 /* ContentViewModelForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E293289A8CD4005BAAC9 /* ContentViewModelForTest.swift */; };
 		1FF4351228901F4E00ECC3DF /* PagHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4351128901F4E00ECC3DF /* PagHWApp.swift */; };
 		1FF4351428901F4E00ECC3DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4351328901F4E00ECC3DF /* ContentView.swift */; };
 		1FF4351628901F5000ECC3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF4351528901F5000ECC3DF /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		1F14E289289A5446005BAAC9 /* SeriviceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriviceLocator.swift; sourceTree = "<group>"; };
 		1F14E28B289A5466005BAAC9 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		1F14E28D289A54B7005BAAC9 /* InjectedWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedWrapper.swift; sourceTree = "<group>"; };
+		1F14E291289A8BBF005BAAC9 /* TestingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingService.swift; sourceTree = "<group>"; };
+		1F14E293289A8CD4005BAAC9 /* ContentViewModelForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelForTest.swift; sourceTree = "<group>"; };
 		1FF4350E28901F4E00ECC3DF /* PagHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF4351128901F4E00ECC3DF /* PagHWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagHWApp.swift; sourceTree = "<group>"; };
 		1FF4351328901F4E00ECC3DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 				1F14E289289A5446005BAAC9 /* SeriviceLocator.swift */,
 				1F14E28B289A5466005BAAC9 /* Configurator.swift */,
 				1F14E28D289A54B7005BAAC9 /* InjectedWrapper.swift */,
+				1F14E291289A8BBF005BAAC9 /* TestingService.swift */,
 			);
 			path = ServiceLocator;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				1FF435222890285C00ECC3DF /* CharactersListView.swift */,
 				1FF4352A28902D4700ECC3DF /* CharacterCellView.swift */,
+				1F14E293289A8CD4005BAAC9 /* ContentViewModelForTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 			files = (
 				1FF4352E28902EBF00ECC3DF /* CharactersViewModel.swift in Sources */,
 				1F14E28C289A5466005BAAC9 /* Configurator.swift in Sources */,
+				1F14E292289A8BBF005BAAC9 /* TestingService.swift in Sources */,
 				1FF4351428901F4E00ECC3DF /* ContentView.swift in Sources */,
+				1F14E294289A8CD4005BAAC9 /* ContentViewModelForTest.swift in Sources */,
 				1FF435302890369F00ECC3DF /* Collections+indexes.swift in Sources */,
 				1FF4352928902C4700ECC3DF /* Model+Identifable.swift in Sources */,
 				1F14E28E289A54B7005BAAC9 /* InjectedWrapper.swift in Sources */,
