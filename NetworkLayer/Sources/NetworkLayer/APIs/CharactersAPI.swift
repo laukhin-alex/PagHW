@@ -12,6 +12,8 @@ import AnyCodable
 
 open class CharactersAPI {
 
+    public init() {}
+
     /**
      get all characters
      
@@ -55,7 +57,9 @@ open class CharactersAPI {
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
         let localVariableRequestBuilder: RequestBuilder<[Description]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        print("🥺getAllCharactersWithRequestBuilder service is done!🤩")
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters)
+
     }
 }

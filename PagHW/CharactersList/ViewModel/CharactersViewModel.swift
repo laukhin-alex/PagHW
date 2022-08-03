@@ -17,6 +17,7 @@ class CharactersViewModel: ObservableObject {
     private var totalPages: Int = 214
 
     func fetchCharacters() {
+        print("🤩fetching characters!🤩")
         guard page <= totalPages else { return }
         guard canLoad == true else { return }
 
