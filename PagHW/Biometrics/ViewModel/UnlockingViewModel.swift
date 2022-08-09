@@ -18,21 +18,24 @@ import LocalAuthentication
         let context = LAContext()
         var error: NSError?
 
-            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-                let reason = "Unlocking is needed"
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Unlocking is needed"
 
-                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
 
-                    if success {
+                if success {
+                    DispatchQueue.main.async {
                         self.isUnlocked = true
-                    } else{
-//                        self.isUnlocked = false
                     }
+                } else {
+                    //                        self.isUnlocked = false
                 }
-            } else {
-//                self.isUnlocked = false
 
             }
+        } else {
+            //                self.isUnlocked = false
+
+        }
         
     }
 }
