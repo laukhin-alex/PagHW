@@ -51,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FD998A928A2B77100F91E5C /* Biometrics */ = {
+			isa = PBXGroup;
+			children = (
+				1FD998AA28A2B7AB00F91E5C /* ViewModel */,
+				1FD998AB28A2B7B600F91E5C /* View */,
+			);
+			path = Biometrics;
+			sourceTree = "<group>";
+		};
+		1FD998AA28A2B7AB00F91E5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FD998AB28A2B7B600F91E5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FD998A128A26F5700F91E5C /* UnlockingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1FF4350528901F4E00ECC3DF = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +99,7 @@
 				1FF4351128901F4E00ECC3DF /* PagHWApp.swift */,
 				1FF4351328901F4E00ECC3DF /* ContentView.swift */,
 				1FF4352728902C1500ECC3DF /* Extensions */,
+				1FD998A928A2B77100F91E5C /* Biometrics */,
 				1FF435202890280E00ECC3DF /* CharactersList */,
 				1FF4351F2890244E00ECC3DF /* NetworkLayer */,
 				1FF4351528901F5000ECC3DF /* Assets.xcassets */,
@@ -104,7 +130,6 @@
 			children = (
 				1FF435222890285C00ECC3DF /* CharactersListView.swift */,
 				1FF4352A28902D4700ECC3DF /* CharacterCellView.swift */,
-				1FD998A128A26F5700F91E5C /* UnlockingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				1FF4352D28902EBF00ECC3DF /* CharactersViewModel.swift */,
-				1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
