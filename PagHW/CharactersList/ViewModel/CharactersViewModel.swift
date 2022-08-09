@@ -8,13 +8,14 @@
 import Foundation
 import NetworkLayer
 
-class CharactersViewModel: ObservableObject {
+@MainActor class CharactersViewModel: ObservableObject {
 
     @Published var characters: [Description] = []
     var canLoad = true
 
     private var page = 2
     private var totalPages: Int = 214
+
 
     func fetchCharacters() {
         guard page <= totalPages else { return }
@@ -26,8 +27,9 @@ class CharactersViewModel: ObservableObject {
                 self?.characters.append(contentsOf: data ?? [])
                 self?.page += 1
                 self?.totalPages = 214
+
             } else {
-                print("Error: \(error)")
+                print("Error: \(String(describing: error))")
             }
             self?.canLoad = true
         }

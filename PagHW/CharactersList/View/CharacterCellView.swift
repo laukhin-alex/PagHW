@@ -33,7 +33,6 @@ struct CharacterCellView: View {
             } else {
                 Text("Unknown character")
             }
-
             Button(action: {
                 self.showDetailViewController = true
                 print(name)
