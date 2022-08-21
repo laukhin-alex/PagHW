@@ -32,7 +32,7 @@ struct CharactersListView: View {
                                   tvSeries: character.tvSeries ?? ["No information"],
                                   playedBy: character.playedBy ?? ["No information"])
                     .onAppear {
-                        if viewModel.canLoad && viewModel.characters.isLast(character) {
+                        if viewModel.canLoad || viewModel.characters.isLast(character) {
                             viewModel.fetchCharacters()
                         }
                     }

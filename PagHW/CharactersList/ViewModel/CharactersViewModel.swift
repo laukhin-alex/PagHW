@@ -13,7 +13,7 @@ import NetworkLayer
     @Published var characters: [Description] = []
     var canLoad = true
 
-    private var page = 2
+    private var page = 1
     private var totalPages: Int = 214
 
 
