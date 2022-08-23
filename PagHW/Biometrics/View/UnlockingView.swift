@@ -29,7 +29,7 @@ struct UnlockingView: View {
         .onAppear {
             unlockingView.authenticate()
         }
-        .navigate(to: CharactersListView(), when: $unlockingView.isUnlocked)
+        .navigate(to: ContentView(), when: $unlockingView.isUnlocked)
     }
 
 }
