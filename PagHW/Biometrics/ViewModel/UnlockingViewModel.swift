@@ -26,6 +26,7 @@ import LocalAuthentication
                 if success {
                     DispatchQueue.main.async {
                         self.isUnlocked = true
+                        print(self.isUnlocked)
                     }
                 } else {
                     //                        self.isUnlocked = false
