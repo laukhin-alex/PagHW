@@ -40,27 +40,28 @@ struct SimpleEntry: TimelineEntry {
 
 struct AppExtensionEntryView : View {
     var entry: Provider.Entry
+    @State var isPressed = false
 
     var body: some View {
-        HStack {
-            Button {
-                print("ONE")
 
-            } label: {
-                Text("One")
-
-
-            }
-            Button {
-                print("two")
-            } label: {
-                Text("Two")
-
-
-            }
+            HStack {
+                Button {
+                    isPressed = true
+                    print("Pressed")
+                } label: {
+                    Text("Show Modal")
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.green)
+                        .cornerRadius(8)
+                }
         }
+//            .navigate(to: SuffixIteratorView(), when: isPressed == true)
     }
+
 }
+
 
 @main
 struct AppExtension: Widget {

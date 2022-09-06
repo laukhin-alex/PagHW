@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1F14E29A28A15851005BAAC9 /* UnlockingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */; };
+		1F32DA0628C746D000FEC8AF /* SuffixIteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48066D28B50DFE00E494A5 /* SuffixIteratorView.swift */; };
 		1F48065C28B50B6400E494A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F48065B28B50B6400E494A5 /* WidgetKit.framework */; };
 		1F48065E28B50B6400E494A5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F48065D28B50B6400E494A5 /* SwiftUI.framework */; };
 		1F48066328B50B6900E494A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48066228B50B6900E494A5 /* Assets.xcassets */; };
 		1F48066728B50B6900E494A5 /* AppExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F48065A28B50B6400E494A5 /* AppExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1F48066E28B50DFE00E494A5 /* SuffixIteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48066D28B50DFE00E494A5 /* SuffixIteratorView.swift */; };
 		1F7B7F4028B51F160036AF4A /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48066028B50B6400E494A5 /* AppExtension.swift */; };
+		1F9060A328C73F7D0041F8D4 /* SuffixIteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48066D28B50DFE00E494A5 /* SuffixIteratorView.swift */; };
+		1FA5A96A28C6462A00428A7F /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5A96928C6462A00428A7F /* WidgetProvider.swift */; };
+		1FA5A96B28C6462A00428A7F /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5A96928C6462A00428A7F /* WidgetProvider.swift */; };
 		1FD998A228A26F5700F91E5C /* UnlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD998A128A26F5700F91E5C /* UnlockingView.swift */; };
 		1FD998A828A2A7C000F91E5C /* ViewNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD998A728A2A7C000F91E5C /* ViewNavigate.swift */; };
 		1FF4351228901F4E00ECC3DF /* PagHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4351128901F4E00ECC3DF /* PagHWApp.swift */; };
@@ -61,6 +64,7 @@
 		1F48066228B50B6900E494A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F48066428B50B6900E494A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F48066D28B50DFE00E494A5 /* SuffixIteratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIteratorView.swift; sourceTree = "<group>"; };
+		1FA5A96928C6462A00428A7F /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
 		1FD998A128A26F5700F91E5C /* UnlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockingView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		1FD998A728A2A7C000F91E5C /* ViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigate.swift; sourceTree = "<group>"; };
 		1FE9919E28B5235C00B7CC53 /* PagHW.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PagHW.entitlements; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				1F48066028B50B6400E494A5 /* AppExtension.swift */,
 				1F48066228B50B6900E494A5 /* Assets.xcassets */,
 				1F48066428B50B6900E494A5 /* Info.plist */,
+				1FA5A96928C6462A00428A7F /* WidgetProvider.swift */,
 			);
 			path = AppExtension;
 			sourceTree = "<group>";
@@ -352,6 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9060A328C73F7D0041F8D4 /* SuffixIteratorView.swift in Sources */,
+				1FA5A96B28C6462A00428A7F /* WidgetProvider.swift in Sources */,
 				1F7B7F4028B51F160036AF4A /* AppExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,11 +373,12 @@
 				1FD998A228A26F5700F91E5C /* UnlockingView.swift in Sources */,
 				1FF4352928902C4700ECC3DF /* Model+Identifable.swift in Sources */,
 				1FF4351228901F4E00ECC3DF /* PagHWApp.swift in Sources */,
+				1FA5A96A28C6462A00428A7F /* WidgetProvider.swift in Sources */,
 				1F14E29A28A15851005BAAC9 /* UnlockingViewModel.swift in Sources */,
 				1FF4352B28902D4700ECC3DF /* CharacterCellView.swift in Sources */,
+				1F32DA0628C746D000FEC8AF /* SuffixIteratorView.swift in Sources */,
 				1FF435232890285C00ECC3DF /* CharactersListView.swift in Sources */,
 				1FD998A828A2A7C000F91E5C /* ViewNavigate.swift in Sources */,
-				1F48066E28B50DFE00E494A5 /* SuffixIteratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
