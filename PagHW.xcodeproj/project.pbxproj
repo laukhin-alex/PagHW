@@ -10,6 +10,7 @@
 		1F14E29A28A15851005BAAC9 /* UnlockingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */; };
 		1FD998A228A26F5700F91E5C /* UnlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD998A128A26F5700F91E5C /* UnlockingView.swift */; };
 		1FD998A828A2A7C000F91E5C /* ViewNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD998A728A2A7C000F91E5C /* ViewNavigate.swift */; };
+		1FF253C528C74C97005F68E2 /* SuffixIteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */; };
 		1FF4351228901F4E00ECC3DF /* PagHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4351128901F4E00ECC3DF /* PagHWApp.swift */; };
 		1FF4351428901F4E00ECC3DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4351328901F4E00ECC3DF /* ContentView.swift */; };
 		1FF4351628901F5000ECC3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF4351528901F5000ECC3DF /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockingViewModel.swift; sourceTree = "<group>"; };
 		1FD998A128A26F5700F91E5C /* UnlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockingView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		1FD998A728A2A7C000F91E5C /* ViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigate.swift; sourceTree = "<group>"; };
+		1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIteratorView.swift; sourceTree = "<group>"; };
 		1FF4350E28901F4E00ECC3DF /* PagHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF4351128901F4E00ECC3DF /* PagHWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagHWApp.swift; sourceTree = "<group>"; };
 		1FF4351328901F4E00ECC3DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				1FF4351F2890244E00ECC3DF /* NetworkLayer */,
 				1FF4351528901F5000ECC3DF /* Assets.xcassets */,
 				1FF4351728901F5000ECC3DF /* Preview Content */,
+				1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */,
 			);
 			path = PagHW;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				1FF4352B28902D4700ECC3DF /* CharacterCellView.swift in Sources */,
 				1FF435232890285C00ECC3DF /* CharactersListView.swift in Sources */,
 				1FD998A828A2A7C000F91E5C /* ViewNavigate.swift in Sources */,
+				1FF253C528C74C97005F68E2 /* SuffixIteratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

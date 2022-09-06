@@ -10,8 +10,34 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @StateObject var unlock: UnlockingViewModal
+    @State var tabSelection: Int = 0
+
+
 
     var body: some View {
-        UnlockingView()
+
+
+        if !unlock.isUnlocked {
+            UnlockingView(unlockingView: unlock)
+
+        } else {
+            TabView(selection: $tabSelection) {
+                CharactersListView()
+                    .tag(0)
+                    .tabItem {
+                        Label("Ice and fire", systemImage: "person.3.fill")
+                    }
+
+                SuffixIteratorView()
+                    .tag(1)
+                    .tabItem {
+                        Label("Suffix", systemImage: "textformat.abc.dottedunderline")
+                    }
+            }
+            .background(.cyan)
+        }
+
     }
+
 }

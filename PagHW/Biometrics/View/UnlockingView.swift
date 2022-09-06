@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct UnlockingView: View {
-    @ObservedObject private var unlockingView = UnlockingViewModal()
+    @ObservedObject  var unlockingView: UnlockingViewModal
 
     var body: some View {
         VStack {
@@ -29,11 +29,10 @@ struct UnlockingView: View {
         .onAppear {
             unlockingView.authenticate()
         }
-        .navigate(to: CharactersListView(), when: $unlockingView.isUnlocked)
+        .navigate(to: ContentView(unlock: UnlockingViewModal()), when: $unlockingView.isUnlocked)
     }
 
 }
-
 //struct UnlockIngView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        UnlockIngView()
