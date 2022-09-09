@@ -100,13 +100,13 @@
 			children = (
 				1FF4351128901F4E00ECC3DF /* PagHWApp.swift */,
 				1FF4351328901F4E00ECC3DF /* ContentView.swift */,
+				1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */,
 				1FF4352728902C1500ECC3DF /* Extensions */,
 				1FD998A928A2B77100F91E5C /* Biometrics */,
 				1FF435202890280E00ECC3DF /* CharactersList */,
 				1FF4351F2890244E00ECC3DF /* NetworkLayer */,
 				1FF4351528901F5000ECC3DF /* Assets.xcassets */,
 				1FF4351728901F5000ECC3DF /* Preview Content */,
-				1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */,
 			);
 			path = PagHW;
 			sourceTree = "<group>";
