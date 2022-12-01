@@ -37,15 +37,17 @@ struct CharacterCellView: View {
                 self.showDetailViewController = true
                 print(name)
             }) {
-                NavigationView {
-                    VStack {
-                        Text(name)
-                            .padding()
-                            .foregroundColor(.brown)
-                            .background(Color.green)
-                    }
-                    .padding()
-                }
+//                NavigationView {
+//                    VStack {
+//                        Text(name)
+//                            .padding()
+//                            .foregroundColor(.brown)
+//                            .background(Color.green)
+//                    }
+//                    .padding(.all)
+//                    Spacer()
+//                }
+                Spacer()
             }.sheet(isPresented: $showDetailViewController) {
                 ScrollView {
                     VStack {
@@ -94,5 +96,11 @@ struct CharacterCellView: View {
                 .background(Color.black)
             }
         }
+    }
+}
+
+struct CharacterCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        CharacterCellView(name: "", url: "", gender: "", culture: "", born: "", died: "", titles: [""], aliases: [""], father: "", mother: "", spouse: "", allegiances: [""], books: [""], povBooks: [""], tvSeries: [""], playedBy: [""])
     }
 }
