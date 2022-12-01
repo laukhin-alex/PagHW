@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterCellView: View {
     @State private var showDetailViewController = false
+    var repository = RealmRepository()
     let name: String
     let url: String
     let gender: String
@@ -94,6 +95,18 @@ struct CharacterCellView: View {
                 }
                 .foregroundColor(.brown)
                 .background(Color.black)
+                .onAppear{
+                    repository.getAllCharacters()
+                }
+                .onDisappear {
+                    repository.addCharacter(AppCharacter(
+
+                        name: name,
+                        gender: gender,
+                        culture: culture,
+                        born: born,
+                        died: died))
+                }
             }
         }
     }

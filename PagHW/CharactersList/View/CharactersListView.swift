@@ -11,6 +11,7 @@ import NetworkLayer
 
 struct CharactersListView: View {
     @ObservedObject private var viewModel = CharactersViewModel()
+    var repository = RealmRepository()
 
     var body: some View {
         NavigationView {
@@ -39,11 +40,13 @@ struct CharactersListView: View {
                             viewModel.fetchCharacters()
                         }
                     }
+
                 }
             }
             .navigationTitle("Персонажи Ice'n Fire")
             .onAppear {
                 viewModel.fetchCharacters()
+                repository.getAllCharacters()
             }
         }
     }

@@ -10,7 +10,7 @@ import Realm
 import RealmSwift
 
 class RealmCharacter: RealmSwiftObject {
-    @Persisted(primaryKey: true) var id: Int
+
     @Persisted var name: String
     @Persisted var gender: String
     @Persisted var culture: String

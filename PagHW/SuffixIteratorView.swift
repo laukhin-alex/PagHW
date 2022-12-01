@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SuffixIteratorView: View {
+    var repositoryTwo = RealmRepository()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("bla")
+//            List {
+//                ForEach(self.repository, id\.self) {
+//                    character in
+//                    Text(character.name)
+//                }
+            }
+        .onAppear {
+            repositoryTwo.getAllCharacters()
+        }
     }
 }
 
