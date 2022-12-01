@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F14E29A28A15851005BAAC9 /* UnlockingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */; };
+		1F86AB922938D3A500F05822 /* RealmCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86AB912938D3A500F05822 /* RealmCharacter.swift */; };
+		1F86AB952938D61600F05822 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86AB942938D61600F05822 /* RealmRepository.swift */; };
+		1F86AB992938D7CC00F05822 /* AppCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86AB982938D7CC00F05822 /* AppCharacter.swift */; };
 		1F9F69052938CF0A009919A6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9F69042938CF0A009919A6 /* Realm */; };
 		1F9F69072938CF0A009919A6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9F69062938CF0A009919A6 /* RealmSwift */; };
 		1FD998A228A26F5700F91E5C /* UnlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD998A128A26F5700F91E5C /* UnlockingView.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		1F14E29928A15851005BAAC9 /* UnlockingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockingViewModel.swift; sourceTree = "<group>"; };
+		1F86AB912938D3A500F05822 /* RealmCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCharacter.swift; sourceTree = "<group>"; };
+		1F86AB942938D61600F05822 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
+		1F86AB982938D7CC00F05822 /* AppCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCharacter.swift; sourceTree = "<group>"; };
 		1FD998A128A26F5700F91E5C /* UnlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockingView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		1FD998A728A2A7C000F91E5C /* ViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigate.swift; sourceTree = "<group>"; };
 		1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIteratorView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F86AB902938D38000F05822 /* RealmData */ = {
+			isa = PBXGroup;
+			children = (
+				1F86AB912938D3A500F05822 /* RealmCharacter.swift */,
+			);
+			path = RealmData;
+			sourceTree = "<group>";
+		};
+		1F86AB932938D5EB00F05822 /* RealmRepository */ = {
+			isa = PBXGroup;
+			children = (
+				1F86AB942938D61600F05822 /* RealmRepository.swift */,
+			);
+			path = RealmRepository;
+			sourceTree = "<group>";
+		};
+		1F86AB962938D78E00F05822 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				1F86AB902938D38000F05822 /* RealmData */,
+				1F86AB932938D5EB00F05822 /* RealmRepository */,
+				1F86AB972938D79E00F05822 /* Data */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		1F86AB972938D79E00F05822 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F86AB982938D7CC00F05822 /* AppCharacter.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1FD998A928A2B77100F91E5C /* Biometrics */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +142,7 @@
 		1FF4351028901F4E00ECC3DF /* PagHW */ = {
 			isa = PBXGroup;
 			children = (
+				1F86AB962938D78E00F05822 /* Realm */,
 				1FF4351128901F4E00ECC3DF /* PagHWApp.swift */,
 				1FF4351328901F4E00ECC3DF /* ContentView.swift */,
 				1FF253C428C74C97005F68E2 /* SuffixIteratorView.swift */,
@@ -249,10 +290,13 @@
 				1FF435302890369F00ECC3DF /* Collections+indexes.swift in Sources */,
 				1FD998A228A26F5700F91E5C /* UnlockingView.swift in Sources */,
 				1FF4352928902C4700ECC3DF /* Model+Identifable.swift in Sources */,
+				1F86AB992938D7CC00F05822 /* AppCharacter.swift in Sources */,
 				1FF4351228901F4E00ECC3DF /* PagHWApp.swift in Sources */,
 				1F14E29A28A15851005BAAC9 /* UnlockingViewModel.swift in Sources */,
 				1FF4352B28902D4700ECC3DF /* CharacterCellView.swift in Sources */,
+				1F86AB952938D61600F05822 /* RealmRepository.swift in Sources */,
 				1FF435232890285C00ECC3DF /* CharactersListView.swift in Sources */,
+				1F86AB922938D3A500F05822 /* RealmCharacter.swift in Sources */,
 				1FD998A828A2A7C000F91E5C /* ViewNavigate.swift in Sources */,
 				1FF253C528C74C97005F68E2 /* SuffixIteratorView.swift in Sources */,
 			);
